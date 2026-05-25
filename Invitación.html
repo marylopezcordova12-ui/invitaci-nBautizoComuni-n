@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Oración</title>
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <script src="JS/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="css/notas.css"> 
+</head>
+
+
+<body style="background-color: #C0DDDA;">
+</body>
+<nav class="navbar" style="background-color: #775537;">
+  
+  <div class="container-fluid">
+    <a class="navbar-brand" href="Inicio.html"> Mi primera comunión y bautizo </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class= navbar-nav w-100 justify-content-between>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="Invitación.html">Invitacion</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="Ubicación.html">Ubicación</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="wire 4.html">Confirmación</a>
+          </li>    
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<br>
+
+
+<div class="body">
+  <!-- Portada con el sobre -->
+  <div id="portada" class="portada">
+    <img src="IMG/rustic-wedding-invite-with-green-envelope-dry-flowers_943281-57397.avif" alt="Sobre de invitación" class="sobre">
+     <button id="botonInicio">Presiona</button>
+  </div>
+
+  <!-- Invitación (oculta al inicio) -->
+  <div id="invitacion" class="oculto">
+  <h1 class="hm">Mi Bautizo y Primera Comunión</h1>
+ 
+</div>
+<br>
+<div>
+  <div class="row">
+    <div class="col-6">
+      <div class="contenedor-circulos">
+        <div class="circulo izquierda" id="circulo1">
+          <p>Dios creador te damos gracias por el don de la vida de estos pequeños que serán integrados en la iglesia a través de estos sacramentos. Que tu bendición, tu paz y alegría los acompañe y los proteja todos los días.</p>
+        </div>
+      </div>
+    </div>
+    <div class="col-6">
+      <img src="IMG/´pilaskejfnh.png" alt="" width="600px">
+    </div>
+  </div>
+
+  <!-- Círculo derecha -->
+  <div class="row">
+    <div class="col-6">
+      <img src="IMG/cross-with-white-dove-and-a-church-candle-on-watercolor-green-splashes-stains-background-hand-drawn-illustration-flying-pigeon-bird-with-gold-framed-cross-for-baptism-or-first-communion-card-i.webp" alt="">
+    </div>
+    <div class="col-6">
+      <div class="circulo derecha" id="circulo2">
+        <p>Con gran alegría y cariño, queremos invitarte a acompañarnos en un día muy especial: el bautizo de Gonzalo y la primera Comunión de Santiago, que celebraremos el <span class="numeros">29</span> de agosto de <span class="numeros">2026</span>.</p>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    const portada = document.getElementById("portada");
+    const invitacion = document.getElementById("invitacion");
+    portada.addEventListener("click", function() {
+      portada.classList.add("fade-out");
+      setTimeout(() => {
+        portada.style.display = "none";
+        invitacion.classList.remove("oculto");
+      }, 1000);
+    });
+
+  </script>
+
+  <div class="d-flex justify-content-center">
+
+    <a href="Ubicación.html" class="btn btn-success btn-lg" role="button">
+    UBICACIÓN
+    </a>
+
+  </div>
+</div>
+</div>
+
+<!-- FOOTER -->
+
+<footer class="bg-dark text-white pt-4 pb-3 mt-5">
+  <div class="container text-center">
+
+
+<!-- Redes sociales -->
+
+<div class="mb-4">
+  <a href="https://www.instagram.com/katjv_2306/" target="_blank" class="text-white mx-4 fs-4">
+   <i class="bi bi-instagram"></i>@katjv_2306
+  </a>
+  <a href="https://www.instagram.com/mar2.379/" target="_blank" class="text-white mx-4 fs-4">
+   <i class="bi bi-instagram"></i>@mar2.379
+  </a>
+  <a href="https://www.instagram.com/monx.v/" target="_blank" class="text-white mx-4 fs-4">
+   <i class="bi bi-instagram"></i>@monx.v
+  </a>
+</div>
+
+
+<!-- Texto -->
+
+<p class="mb-0 small">
+  © 2026 Mi de mi, Bautizos | Todos los derechos reservados
+</p>
+</div>
+</footer>
+
+
+</body>
+</html>
